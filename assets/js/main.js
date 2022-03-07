@@ -224,7 +224,8 @@
   const portfolioDetailsLightbox = GLightbox({
     selector: '.portfolio-details-lightbox',
     width: '90%',
-    height: '90vh'
+    height: '90vh',
+    touchNavigation: false
   });
 
   /**
@@ -243,5 +244,19 @@
       clickable: true
     }
   });
+
+    /**
+   * Portfolio details slider
+   */
+     new Swiper('.portfolio-details-slider-custom', {
+      speed: 400,
+      loop: true,
+      autoplay: false,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
 
 })()

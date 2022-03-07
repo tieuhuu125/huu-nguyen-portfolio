@@ -1028,3 +1028,7 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.gprev.gbtn, .gnext.gbtn {
+  display: none;
+}
